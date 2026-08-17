@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kevyn Yoel Cardenas Mendez — Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div id="boot-screen" class="boot">
+        <p id="boot-text" class="boot__text"></p>
+    </div>
+
+    <header class="nav">
+        <span class="nav__logo">KC</span>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#presentacion">Presentación</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#evidencias">Evidencias</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- BIENVENIDA -->
+        <section id="inicio" class="hero">
+            <div class="hero__text hero__text--center">
+                <p class="eyebrow"><span class="dot dot--done"></span> disponible para nuevas oportunidades</p>
+                <h1>¡Bienvenido/a a mi portafolio!</h1>
+                <p class="hero__bio" id="typed-bio"></p>
+                <a href="#presentacion" class="btn">conóceme ↓</a>
+            </div>
+        </section>
+
+        <!-- PRESENTACIÓN -->
+        <section id="presentacion" class="section">
+            <p class="eyebrow">// 01 — presentación</p>
+            <h2>Kevyn Yoel Cardenas Mendez</h2>
+
+            <div class="presentation-grid">
+                <div class="hero__photo">
+                    <img src="assets/avatar.jpeg" alt="Kevyn Yoel Cardenas Mendez" />
+                </div>
+                <div class="card__media presentation-video">
+                    <iframe src="https://www.youtube.com/embed/We-KfPFoSUY" title="Video de presentación" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline__item">
+                    <div class="timeline__marker"></div>
+                    <div class="timeline__content">
+                        <span class="timeline__tag">[origen]</span>
+                        <h3>Gachalá, Cundinamarca</h3>
+                        <p>Crecí en Gachalá, conocida como la capital hidroeléctrica del Guavio. Un pueblo pequeño
+                            rodeado de montañas y del embalse que le da su identidad, el mismo lugar donde aprendí
+                            que las cosas grandes también nacen en lugares pequeños.</p>
+                    </div>
+                </div>
+
+                <div class="timeline__item">
+                    <div class="timeline__marker"></div>
+                    <div class="timeline__content">
+                        <span class="timeline__tag">[pasión]</span>
+                        <h3>Esquí acuático</h3>
+                        <p>En las aguas del embalse del Guavio descubrí el esquí acuático, un deporte que me enseñó
+                            disciplina, equilibrio y a no rendirme ante la caída, habilidades que hoy aplico
+                            exactamente igual cuando un código no compila a la primera.</p>
+                    </div>
+                </div>
+
+                <div class="timeline__item">
+                    <div class="timeline__marker"></div>
+                    <div class="timeline__content">
+                        <span class="timeline__tag">[misión]</span>
+                        <h3>Bogotá — cumpliendo sueños</h3>
+                        <p>Llegué a Bogotá a estudiar Ingeniería de Sistemas en la Universidad El Bosque, dejando
+                            atrás lo conocido para perseguir algo más grande. Este portafolio es parte de ese
+                            camino: documentar cada paso de lo que estoy construyendo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROYECTOS -->
+        <section id="proyectos" class="section">
+            <p class="eyebrow">// 02 — proyectos</p>
+            <h2>Lo que he construido</h2>
+
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">todos</button>
+                <button class="filter-btn" data-filter="completed">completados</button>
+                <button class="filter-btn" data-filter="in-progress">en progreso</button>
+            </div>
+
+            <div id="projects-grid" class="projects-grid"></div>
+        </section>
+
+        <!-- EVIDENCIAS (bonus) -->
+        <section id="evidencias" class="section">
+            <p class="eyebrow">// 03 — evidencias del curso</p>
+            <h2>Bases de Datos 1</h2>
+            <div class="evidence-grid">
+                <div class="evidence-card">
+                    <span class="timeline__tag">[modelado]</span>
+                    <h3>Modelado</h3>
+                    <p>Próximamente: diagramas entidad-relación de los proyectos del curso.</p>
+                </div>
+                <div class="evidence-card">
+                    <span class="timeline__tag">[normalización]</span>
+                    <h3>Normalización</h3>
+                    <p>Próximamente: ejercicios de normalización (1FN, 2FN, 3FN).</p>
+                </div>
+                <div class="evidence-card">
+                    <span class="timeline__tag">[sql]</span>
+                    <h3>SQL</h3>
+                    <p>Próximamente: consultas y scripts SQL desarrollados en clase.</p>
+                </div>
+                <div class="evidence-card">
+                    <span class="timeline__tag">[proyecto]</span>
+                    <h3>Proyecto final</h3>
+                    <p>Próximamente: el proyecto integrador del curso.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto" class="section">
+            <p class="eyebrow">// 04 — contacto</p>
+            <h2>Hablemos</h2>
+            <div class="terminal">
+                <p>
+                    <span class="prompt">$</span> email
+                    <a href="mailto:kcardenasm@unbosque.edu.co">kcardenasm@unbosque.edu.co</a>
+                    <button class="copy-btn" data-copy="kcardenasm@unbosque.edu.co">copiar</button>
+                </p>
+                <p>
+                    <span class="prompt">$</span> teléfono
+                    <a href="tel:+573138428857">+57 313 842 8857</a>
+                    <button class="copy-btn" data-copy="+573138428857">copiar</button>
+                </p>
+                <p><span class="prompt">$</span> github <a href="https://github.com/yoelcar2307" target="_blank" rel="noopener">github.com/yoelcar2307</a></p>
+                <p><span class="prompt">$</span> instagram <a href="https://instagram.com/yoel_cardenas_" target="_blank" rel="noopener">@yoel_cardenas_</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Kevyn Yoel Cardenas Mendez — 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

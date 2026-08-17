@@ -1,0 +1,10 @@
+{
+  "name": "portafolio-kevyn",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
